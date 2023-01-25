@@ -881,7 +881,8 @@ number:
             value: !lambda 'return x;'
 
 time:
-  - on_time:
+  - platform: sntp
+    on_time:
     # Every minute
     - seconds: 0
       minutes: '*'
